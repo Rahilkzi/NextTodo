@@ -1,6 +1,7 @@
 import { action, computed, makeAutoObservable, observable } from 'mobx';
 import { makePersistable } from 'mobx-persist-store';
 import { v4 as uuidv4 } from 'uuid';
+import localforage from 'localforage';
 
 
 const isBrowser = typeof window !== 'undefined';
@@ -17,16 +18,21 @@ class TodoStore {
       todos: observable,
       addTodo: action,
       completeTodo: action,
-      info: computed
-    });
+      info: computed 
+    },
+    { autoBind: true }
+    
+    );
 
   // makes store persistable
     makePersistable(this, {
       name: 'TodoStore',
       properties: ['todos'],
-      debugMode: true,
-      storage: isBrowser ? localStorage : undefined
-    })
+      debugMode: false,
+      storage: isBrowser ? localforage : undefined
+    },
+    { delay: 200, fireImmediately: false }
+    );
   };
 
   // store in mobx is mutable, so just push a new task into it
@@ -34,6 +40,7 @@ class TodoStore {
     console.log(`create`)
     this.todos.push({ ...todo, id: uuidv4() });
   };
+  
 
   // delete the task by id, the filtered array by id
   deleteTodo(id) {
