@@ -1,7 +1,8 @@
 import TodoStore from "../store/TodoStore";
 import { observer } from "mobx-react-lite";
-import { Space, Button, Typography, Table } from "antd";
+import { Button, Typography, Table } from "antd";
 import { CheckCircleTwoTone, RedoOutlined, CheckOutlined, DeleteTwoTone } from '@ant-design/icons';
+
 
 
 
@@ -63,6 +64,7 @@ const TodoList = () => {
                 <DeleteTwoTone twoToneColor='#cf1322' />
               </Button>
             </div>
+
           </>
       }
     )

@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react"
 import TodoStore from "../store/TodoStore"
 import { observer } from "mobx-react-lite"
-import { v4 as uuidv4 } from "uuid";
 import { Button, Input, Space } from 'antd'
 import { PlusOutlined } from '@ant-design/icons';
 
@@ -33,7 +32,16 @@ const AddTodo = () => {
           {/* <input className="form-control" type="text" value={text} placeholder="Todo title..." 
         onChange={t => setText(t)} defaultValue={text} 
       /> */}
+
+  
           <Input
+            onPressEnter={_ => {
+              TodoStore.addTodo({
+                title: title,
+                completed: false,
+              })
+              setTitle("")
+            }}
             showCount maxLength={20}
             className="form-control"
             type="text"
