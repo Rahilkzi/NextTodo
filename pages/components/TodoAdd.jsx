@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react"
-import TodoStore from "../store/TodoStore"
+import TodoStore from "../stores/TodoStore"
 import { observer } from "mobx-react-lite"
 import { Button, Input, Space } from 'antd'
 import { PlusOutlined } from '@ant-design/icons';

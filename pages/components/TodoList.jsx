@@ -1,4 +1,4 @@
-import TodoStore from "../store/TodoStore";
+import TodoStore from "../stores/TodoStore";
 import { observer } from "mobx-react-lite";
 import { Button, Typography, Table } from "antd";
 import { CheckCircleTwoTone, RedoOutlined, CheckOutlined, DeleteTwoTone } from '@ant-design/icons';
