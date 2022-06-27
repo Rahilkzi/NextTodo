@@ -1,6 +1,6 @@
 import TodoList from './components/TodoList';
 import TodoAdd from './components/TodoAdd';
-import { Affix, Card, Layout, Col, Row, Space } from 'antd';
+import {  Card, Col, Row} from 'antd';
 
 function App() {
   return (
@@ -17,10 +17,7 @@ function App() {
       </Col>
     </Row>
     </>
-  );
-  // var datetime = new Date();
-  // console.log(datetime);
-  // document.getElementByClass("time").textContent = datetime; //it will print on html page
+  )
 }
 
 export default App;
