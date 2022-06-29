@@ -45,23 +45,26 @@ const TodoList = () => {
 
               {completed ?
                 <Button
-                  className="btn btn-sm btn-info"
+                  size="large"
+                  className="btn btn-lg btn-info"
                   onClick={() => TodoStore.completeTodo(id)}
                 >
                   <RedoOutlined />
                 </Button>
                 : <Button
-                  className="btn btn-sm btn-info"
+                  size="large"
+                  className="btn btn-lg btn-info"
                   onClick={() => TodoStore.completeTodo(id)}
                 >
                   <CheckOutlined />
                 </Button>}
 
               <Button
-                className="btn btn-sm btn-danger"
+                size="large"
+                className="btn btn-lg btn-danger"
                 onClick={() => TodoStore.deleteTodo(id)}
               >
-                <DeleteTwoTone twoToneColor='#cf1322' />
+                <DeleteTwoTone style={{}} twoToneColor='#cf1322' />
               </Button>
             </div>
 
@@ -72,19 +75,10 @@ const TodoList = () => {
 
   return (
 
-    <Table pagination={{ pageSize: 6 }} columns={columns}
+    <Table pagination={{ pageSize:200, position: [] }} columns={columns}
       dataSource={data} />
 
   )
 }
 export default observer(TodoList);
 
-
-
-
-// <Button
-//   className="btn btn-sm btn-info"
-//   onClick={() => TodoStore.completeTodo(id)}
-// >
-//   Toggle
-// </Button>

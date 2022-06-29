@@ -1,0 +1,98 @@
+.ant-table-thead > tr > th {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.ant-table table {
+  width: 100%;
+  margin: 3em 0 1.5em 0em;
+}
+
+.ant-input-affix-wrapper {
+  margin-right: 21.4em;
+}
+
+h5.ant-typography {
+  padding-right: 10rem;
+  text-transform: capitalize;
+}
+
+h5.ant-typography.checked {
+  padding-right: 9rem;
+}
+
+.button-ant {
+  text-align: center;
+}
+
+th.ant-table-cell.Action {
+  text-align: center;
+  padding: 0 3.2em 0 3.2em;
+}
+
+.ant-btn-primary {
+  padding: 0 1.4rem 0 1.4rem;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  color: black;
+}
+
+.ant-table-container table > thead > tr:first-child th:first-child {
+  border-top-left-radius: 2px;
+  text-align: left;
+  padding-right: 23rem;
+}
+
+.ant-card-body,
+.ant-table {
+  background: aliceblue;
+}
+
+.ant-card-head {
+  background: thistle;
+}
+
+.ant-table-wrapper {
+  overflow-y: scroll;
+  height: 30rem;
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    font-size: large;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child,
+  .ant-input-affix-wrapper > input.ant-input,
+  .ant-card-head-title,
+  h5.ant-typography,
+  .anticon svg,
+  del {
+    font-size: xx-large;
+  }
+
+  .ant-table-wrapper {
+    overflow-y: scroll;
+    height: 45rem;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child,
+  h5.ant-typography.checked,
+  h5.ant-typography {
+    padding-right: 6rem;
+  }
+
+  th.ant-table-cell.Action {
+    font-size: x-large;
+    padding: 0 2.2em 0 2.2em;
+  }
+  h5.ant-typography.checked {
+    display: contents;
+  }
+
+  .ant-btn-primary {
+    padding-bottom: 3rem;
+  }
+}

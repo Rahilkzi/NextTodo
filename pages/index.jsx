@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css'
 import App from './App'
 
 
-
 function Home() {
   return (
     <div className={styles.container}>
@@ -21,3 +20,5 @@ function Home() {
 
 
 export default Home;
+
+

@@ -12,6 +12,7 @@
     "@ant-design/icons": "^4.7.0",
     "@createnextapp/async-local-storage": "^1.0.1",
     "antd": "^4.21.3",
+    "antd-mobile-v2": "^2.3.4",
     "async-local-storage": "^2.3.1",
     "autosave": "^1.0.3",
     "localforage": "^1.10.0",
@@ -22,6 +23,7 @@
     "next": "12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-responsive": "^9.0.0-beta.10",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

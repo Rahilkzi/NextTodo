@@ -2,6 +2,7 @@ import TodoList from './components/TodoList';
 import TodoAdd from './components/TodoAdd';
 import {  Card, Col, Row} from 'antd';
 
+
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
         </Card>
       </Col>
     </Row>
+
     </>
   )
 }

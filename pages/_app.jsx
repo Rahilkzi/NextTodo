@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import './App.css'
+
 import { enableStaticRendering } from 'mobx-react-lite';
 
 function MyApp({ Component, pageProps }) {
