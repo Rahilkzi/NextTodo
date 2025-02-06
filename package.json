@@ -32,5 +32,7 @@
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
     "react-native-uuid": "^2.0.1"
+
+    
   }
 }
